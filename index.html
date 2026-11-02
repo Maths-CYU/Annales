@@ -5,17 +5,13 @@
 <meta name='keywords' content='annales,annale,examen,partiel,cc,controle continu,licence,math,maths,mathématiques,cergy,
 pontoise,cergy pontoise,ucp,université,exercices,exo,exos,archives,université,faculté,concours,devoir,problème,sujet,étudiant,france,
 ennoncé,francais,enseignant,enseignement,gratuit,free,libre,controle, connaissances,notes'>
-<?php  $fichier="jecomptedepuis2026.txt";$ouvre=fopen($fichier,"r+b");$NbreVisite=fread($ouvre,1024)+1;
-fseek($ouvre,0);fwrite($ouvre,$NbreVisite);fclose($ouvre); ?></head>
+</head>
 <body ><center><font color='#005AA9' size=+5>Liste d'annales de math&eacute;matiques de CY Tech </font><br>
 <font color='#4CAF50' size=+2>Sujets de partiels et d'examens de Maths, de licence, de l'université de Cergy Pontoise</font><br>
 <font color='#4CAF50' size=+2>CYU - CY Tech - CY Cergy Paris universit&eacute;</font><br>
 <font color='#4CAF50' size=+2>Algèbre, analyse, probabilités, géométrie,...<br> parcours mathématiques; informatiques; physique; GC; chimie; double licence; CUPGE ...</font><br><font color='#F2C300' size=+1>
-<?php  $fichier="jecomptedepuis2026.txt";$ouvre=fopen($fichier,"r+b");$NbreVisite=fread($ouvre,1024)+1;
-fseek($ouvre,0);echo $NbreVisite;fclose($ouvre); ?>
- visites depuis janvier 2026 </font><br><font color='#1A1A1A' size=+1>Il faut déplacer la souris pour obtenir les fichiers</font></center><HR><br><br>
-<font color='#1A1A1A' size=+2><a href=Archives.html>Archives antérieures à 2020 </a></font><br><br>
-<div id='cachealex' style='display:none;'><table width=80% align=center><TR bgcolor='#FFDC96'><TD COLSPAN=5><font color='#990000'><H2>Annale du semestre S1</H2></font></TD></TR> 
+</center><HR><br><br>
+<table width=80% align=center><TR bgcolor='#FFDC96'><TD COLSPAN=5><font color='#990000'><H2>Annale du semestre S1</H2></font></TD></TR> 
         
  <TR bgcolor='F5DEB3'>
              <TH ALIGN=LEFT>Module</TH>
@@ -359,22 +355,4 @@ fseek($ouvre,0);echo $NbreVisite;fclose($ouvre); ?>
 <TR bgcolor=#F5DEB3><TD>Geometrie</TD>  <TD>MIPI</TD><TD><a href=telechargement/S6.MIPI.Geometrie!2023!1)Examen_Session1!20230601151314.pdf>2022-2023(pdf)</a></TD><TD>1)Examen_Session1</TD><TD>01-06-2023</TD></TR>
 <TR bgcolor=#F5DEB3><TD>Geometrie</TD>  <TD>MIPI</TD><TD><a href=telechargement/S6.MIPI.Geometrie!2025!2)Examen1_Correction!20250620122408.pdf>2024-2025(pdf)</a></TD><TD>2)Examen1_Correction</TD><TD>20-06-2025</TD></TR>
 </table><br><center><a href='http://www.u-cergy.fr'><img src='CY.png' style='width: 400px;'></a></center><br></div>
-<script>
-let personne = false;
-let delaiPasse = false;
-function afficher() {
-  if (personne && delaiPasse) {
-    document.getElementById('cachealex').style.display = 'block';
-  }
-}
-['mousemove','keydown','touchstart'].forEach(e =>
-  document.addEventListener(e, () => {
-    personne = true;
-    afficher();
-  }, { once:true })
-);
-setTimeout(() => {
-  delaiPasse = true;
-  afficher();
-}, 2000);
-</script><br></body></html>
+<br></body></html>
